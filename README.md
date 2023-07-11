@@ -9,6 +9,8 @@ Create a QnA chatbot on your documents without relying on the internet by utiliz
 * [Getting started](#getting-started)
 * [Requirements](#requirements)
 * [How to run](#how-to-run)
+  * [Local](#local)
+  * [Docker](#docker)
 * [Support](#support)
 * [Data](#data)
 * [Check repos](#check-repos)
@@ -22,10 +24,11 @@ Follow [Anil Chandra Naidu Matcha](https://twitter.com/matchaman11) & [Ankur Sin
 ## Requirements
 
 * Python 3.8 or later
-* NodeJS v18.12.1 or later
 * Minimum 16GB of memory
 
 ## How to run
+
+### Local
 
 1. Go to client folder and run the below commands
 
@@ -44,7 +47,7 @@ Follow [Anil Chandra Naidu Matcha](https://twitter.com/matchaman11) & [Ankur Sin
    ```
 
    ```shell
-   python privateGPT.py
+   python privateGPT.
    ```
 
 3. Open <http://localhost:3000>, click on download model to download the required model initially
@@ -52,6 +55,20 @@ Follow [Anil Chandra Naidu Matcha](https://twitter.com/matchaman11) & [Ankur Sin
 4. Upload any document of your choice and click on Ingest data. Ingestion is fast
 
 5. Now run any query on your data. Data querying is slow and thus wait for sometime
+
+### Docker
+
+1. Go to root and run the command bellow:
+
+   ```shell
+   docker-compose up --build
+   ```
+
+2. Open <http://localhost:3000>, click on download model to download the required model initially
+
+3. Upload any document of your choice and click on Ingest data. Ingestion is fast
+
+4. Now run any query on your data. Data querying is slow and thus wait for sometime
 
 ## Support
 
